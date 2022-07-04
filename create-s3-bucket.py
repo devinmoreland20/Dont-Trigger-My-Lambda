@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.9
 import boto3
 s3 = boto3.resource('s3')
-BUCKET_NAME = <INSERT_BUCKET_NAME>
+BUCKET_NAME = "devin02231993"
 
 bucket = s3.create_bucket(
     ACL = 'public-read',
