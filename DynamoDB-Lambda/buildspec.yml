@@ -12,4 +12,4 @@ phases:
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - aws lambda update-function-code --function-name QueryTest --zip-file fileb://deployment_packe.zip
+      - aws lambda update-function-code --function-name QueryTest --zip-file fileb://deployment_package.zip
