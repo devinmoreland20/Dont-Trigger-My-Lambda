@@ -9,7 +9,6 @@ GET_RAW_PATH = "/planet/query"
 GET_RAW_PATH_SCAN = "/planet"
 GET_PATH_DELETE = "/delete"
 
-
 def lambda_handler(event, context): 
     print(event)
        
