@@ -5,7 +5,7 @@ phases:
       python: 3.9
   build:
     commands:
-      - zip -g deployment_package.zip /DynamoDB-Lambda/API-Lambda-DynamoDB.py
+      - zip -g deployment_package.zip newlambda.py
   post_build:
     commands:
       - echo Entered the post_build phase...
