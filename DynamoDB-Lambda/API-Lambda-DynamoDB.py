@@ -45,4 +45,4 @@ def lambda_handler(event, context):
         return {'body': json.dumps(list_items)}
         
     else:
-        print("Table/Item not found") #######
+        print("Table/Item not found") 
