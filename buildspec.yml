@@ -5,8 +5,9 @@ phases:
       python: 3.9
   build:
     commands:
-      - zip -g deployment_package.zip newlambda.py
+      - zip -g deployment_package.zip Code.py
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - aws lambda update-function-code --function-name QueryTest --zip-file fileb://deployment_package.zip
+      - aws s3 sync dist/s3-lambda s3://devin-1993
+      #- aws lambda update-function-code --function-name codebuild --zip-file fileb://deployment_package.zip
