@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+  build:
+    commands:
+      - zip -g deployment_package.zip Lambda_function_1_code.py
+
+  post_build:
+    commands:
+      - aws s3 cp deployment_package.zip s3://lambdatesting2022/
